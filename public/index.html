@@ -20,6 +20,11 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <!-- Note the v=3.33, v3.34 broke the map where it would render on
+      page load, but then not again on subsequent requests. We had previously not set a version and got the latest, which created this super hard to
+      track down error... -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtZ4XSMehoUKNKFVSWqPQeyUJWGgQBFoU&libraries=places,geometry,drawing&v=3.34"></script>
   </head>
   <body>
     <noscript>
